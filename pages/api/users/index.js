@@ -12,7 +12,6 @@ export default async function handle(req, res) {
     } else if (req.method == "GET") {
         await handleListAll(res)
     }
-
 }
 
 async function handleListAll(res) {
@@ -22,8 +21,6 @@ async function handleListAll(res) {
 
 
 async function handleCreate(res, email, name, pwd) {
-
-
    await bcrypt.hash(pwd, saltRounds, async function(err, hash) {
         const result = await prisma.user.create({
             data: {
@@ -36,11 +33,6 @@ async function handleCreate(res, email, name, pwd) {
         })
         await res.json(result)
     });
-
-
-
-
-
 }
 
 
