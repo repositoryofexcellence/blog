@@ -5,7 +5,7 @@ export default async function handle(req, res) {
     const postId = req.query.id
     const {email, name} = req.body
     if (req.method == "PUT") {
-        handleUpdate(postId, res,name, email )
+        handleUpdate(postId, res, name, email)
     } else if (req.method == "DELETE") {
         handleDelete(postId, res)
     } else if (req.method == "GET") {
@@ -32,11 +32,11 @@ async function handleFindById(postId, res) {
 async function handleUpdate(postId, res, name, email) {
     await prisma.user.update({
         where: {id: Number(postId)},
-        data:{
-            email:email,
-            name:name
+        data: {
+            email: email,
+            name: name
         }
     })
 
-  await handleFindById(postId,res)
+    await handleFindById(postId, res)
 }
