@@ -1,7 +1,4 @@
-import '../styles/fonts.css'
-import '../styles/custom.css'
-
-import Layout from "../components/layout/layout";
+import '../styles/dist.css'
 
 function MyApp({Component, pageProps}) {
     return (<Component {...pageProps} />)

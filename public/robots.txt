@@ -1,0 +1,8 @@
+//robots.txt
+
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /api
+Disallow: /yonetim-paneli-admin-pwd
+Allow: /
+

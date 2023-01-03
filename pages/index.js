@@ -22,7 +22,7 @@ const DUMMY_POSTS = [
 function HomePage() {
     return (
         <Fragment>
-            <div>Hoşgeldiniz ığşIĞŞİ</div>
+            <div>Merhaba</div>
         </Fragment>
 
     )
