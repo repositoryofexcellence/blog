@@ -22,8 +22,7 @@ const DUMMY_POSTS = [
 function HomePage() {
     return (
         <Fragment>
-            <Hero/>
-            <FeaturedPosts posts={DUMMY_POSTS}/>
+            <div>Hoşgeldiniz ığşIĞŞİ</div>
         </Fragment>
 
     )
