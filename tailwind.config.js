@@ -9,11 +9,11 @@ module.exports = {
 
     },
     fontFamily: {
-      'sans': ['Axiforma'],
-      'serif': ['Axiforma'],
-      'mono':  ['Axiforma'],
-      'display':  ['Axiforma'],
-      'body': ['Axiforma'],
+      'sans': ['Google Sans'],
+      'serif': ['Google Sans'],
+      'mono':  ['Google Sans'],
+      'display':  ['Google Sans'],
+      'body': ['Google Sans'],
     }
   },
   plugins: [],
