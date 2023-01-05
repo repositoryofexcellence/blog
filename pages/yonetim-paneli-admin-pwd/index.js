@@ -3,7 +3,7 @@ import {Fragment} from "react";
 function Dashboard() {
     return (
         <Fragment>
-            <div>Merhaba</div>
+            <button className="btn btn-primary">Merhaba</button>
         </Fragment>
 
     )

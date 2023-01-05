@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 const LayoutClient = (props) => {
     useEffect(() => {
         const body = document.querySelector('body');
-        body?.classList.add('tailwind-layouts');
+        body?.classList.add('tailwind-bundle');
         return () => {
-            body?.classList.remove('tailwind-layouts');
+            body?.classList.remove('tailwind-bundle');
         }
     }, []);
 
