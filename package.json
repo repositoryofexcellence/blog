@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev --turbo\" \"tailwindcss -i styles/globals.scss -o styles/dist.css -w\"",
-    "build": "tailwindcss -m -i styles/globals.scss -o styles/dist.scss && next build",
+    "dev": "concurrently \"next dev --turbo\" \"tailwindcss -i styles/globals.css -o styles/dist.css -w\" && concurrently \"next dev --turbo\" \"tailwindcss -i styles/bs.css -o styles/bsdist.css -w\"",
+    "build": "tailwindcss -m -i styles/globals.scss -o styles/dist.css && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "^4.8.0",
     "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.3",
     "gray-matter": "^4.0.3",
     "next": "^13.0.7",
     "prisma": "^4.8.0",
@@ -22,9 +23,11 @@
     "autoprefixer": "^10.4.13",
     "concurrently": "^7.6.0",
     "postcss": "^8.4.20",
+    "postcss-font-magician": "^3.0.0",
     "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.0",
+    "postcss-nested-import": "^0.2.0",
     "postcss-nesting": "^10.2.0",
+    "postcss-scss": "^4.0.6",
     "postcss-strip-inline-comments": "^0.1.5",
     "sass": "^1.57.1",
     "tailwindcss": "^3.2.4"

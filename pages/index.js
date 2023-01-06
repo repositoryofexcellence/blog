@@ -4,7 +4,7 @@ function HomePage() {
     return (
         <Fragment>
 
-            <div>Merhaba</div>
+            <button className="btn btn-primary">Merhaba</button>
 
         </Fragment>
 
