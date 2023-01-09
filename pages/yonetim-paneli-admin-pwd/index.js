@@ -1,5 +1,6 @@
 import {Fragment} from "react";
 
+import '../../styles/bs.css'
 function Dashboard() {
     return (
         <Fragment>

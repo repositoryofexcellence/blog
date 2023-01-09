@@ -1,2 +1,5 @@
-@import "./plugins.css";
-@import "./style.css";
+
+@import "./plugins/global/plugins.bundle.css";
+@import "./css/style.bundle.css";
+@import "./custom.css";
+
