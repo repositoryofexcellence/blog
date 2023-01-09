@@ -1,11 +1,13 @@
 import {Fragment} from "react";
+import LayoutAdmin from "../../components/admin/layout/layout";
+import LayoutStyle from "../../components/admin/layout/LayoutStyle";
 
-import '../../styles/bs.css'
+
 function Dashboard() {
     return (
-        <Fragment>
-            <button className="btn btn-primary">Merhaba</button>
-        </Fragment>
+        <LayoutStyle>
+            Merhaba
+        </LayoutStyle>
 
     )
 }

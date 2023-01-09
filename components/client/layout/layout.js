@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, Fragment} from 'react';
 
 const LayoutClient = (props) => {
     useEffect(() => {
@@ -6,10 +6,10 @@ const LayoutClient = (props) => {
     }, []);
 
     return (
-        <>
+        <Fragment>
             Client
             {props.children}
-        </>
+        </Fragment>
     );
 
 };
