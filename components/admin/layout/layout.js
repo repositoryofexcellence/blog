@@ -6,7 +6,6 @@ const LayoutAdmin = (props) => {
     }, []);
     return (
         <Fragment>
-            Admin
             {props.children}
         </Fragment>
     );
