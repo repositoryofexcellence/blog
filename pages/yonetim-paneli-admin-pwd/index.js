@@ -7,6 +7,7 @@ function Dashboard() {
     return (
         <LayoutStyle>
             Merhaba
+
         </LayoutStyle>
 
     )

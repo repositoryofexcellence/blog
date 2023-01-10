@@ -1,20 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { useRouter } from 'next/router'
-import {useEffect} from "react";
-
-
+import Script from "next/script";
+import React from "react";
 
 const  Document = () => {
-
-    useEffect(() => {
-        const router = useRouter()
-
-
-        console.log(router)
-        return () => {
-
-        }
-    }, []);
 
 
     return (
@@ -22,7 +10,11 @@ const  Document = () => {
             <Head />
             <body>
             <Main />
+
+
             <NextScript />
+
+
             </body>
         </Html>
     )
